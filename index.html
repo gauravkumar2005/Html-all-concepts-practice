@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Basic HTML All Concepts Project</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family:Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f4f4;
+      color:#333;
+    }
+
+    header{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:20px;
+    }
+
+    nav{
+      margin-top:10px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin:0 15px;
+      font-size:18px;
+    }
+
+    .hero{
+      background:linear-gradient(to right,#4facfe,#00f2fe);
+      color:white;
+      height:300px;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      flex-direction:column;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:40px;
+    }
+
+    .hero p{
+      margin-top:10px;
+      font-size:18px;
+    }
+
+    .btn{
+      margin-top:20px;
+      padding:10px 20px;
+      border:none;
+      background:white;
+      color:black;
+      border-radius:5px;
+      cursor:pointer;
+      font-weight:bold;
+    }
+
+    .container{
+      width:90%;
+      margin:auto;
+      padding:40px 0;
+    }
+
+    section{
+      margin-bottom:50px;
+    }
+
+    h2{
+      margin-bottom:20px;
+      color:#222;
+    }
+
+    .card-container{
+      display:flex;
+      gap:20px;
+      flex-wrap:wrap;
+    }
+
+    .card{
+      background:white;
+      padding:20px;
+      width:300px;
+      border-radius:10px;
+      box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .card img{
+      width:100%;
+      border-radius:10px;
+    }
+
+    .card h3{
+      margin:15px 0 10px;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      background:white;
+    }
+
+    table, th, td{
+      border:1px solid #ccc;
+    }
+
+    th, td{
+      padding:12px;
+      text-align:center;
+    }
+
+    form{
+      background:white;
+      padding:20px;
+      border-radius:10px;
+    }
+
+    input, textarea, select{
+      width:100%;
+      padding:10px;
+      margin:10px 0;
+      border:1px solid #ccc;
+      border-radius:5px;
+    }
+
+    footer{
+      background:#222;
+      color:white;
+      text-align:center;
+      padding:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Basic HTML All Concepts Project</h1>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Gallery</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to HTML Practice Project</h1>
+
+    <p>
+      This project contains basic HTML, CSS and JavaScript concepts.
+    </p>
+
+    <button class="btn" onclick="showMessage()">
+      Click Me
+    </button>
+  </section>
+
+  <!-- Main Container -->
+  <div class="container">
+
+    <!-- About Section -->
+    <section>
+      <h2>About HTML</h2>
+
+      <p>
+        HTML stands for Hyper Text Markup Language.
+        It is used to create webpages and website structure.
+      </p>
+
+      <br>
+
+      <ul>
+        <li>HTML creates webpage structure</li>
+        <li>CSS adds design</li>
+        <li>JavaScript adds functionality</li>
+      </ul>
+    </section>
+
+    <!-- Image Section -->
+    <section>
+      <h2>Image Example</h2>
+
+      <img 
+        src="https://via.placeholder.com/600x300"
+        alt="Sample Image"
+        width="100%"
+      >
+    </section>
+
+    <!-- Cards Section -->
+    <section>
+      <h2>Project Cards</h2>
+
+      <div class="card-container">
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="project">
+
+          <h3>Calculator</h3>
+
+          <p>
+            Simple calculator using HTML CSS and JavaScript.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="project">
+
+          <h3>Todo App</h3>
+
+          <p>
+            Daily task management application project.
+          </p>
+        </div>
+
+        <div class="card">
+          <img src="https://via.placeholder.com/300" alt="project">
+
+          <h3>Weather App</h3>
+
+          <p>
+            Weather checking application using API.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Table Section -->
+    <section>
+      <h2>Student Table</h2>
+
+      <table>
+
+        <tr>
+          <th>Name</th>
+          <th>Course</th>
+          <th>Marks</th>
+        </tr>
+
+        <tr>
+          <td>Gaurav</td>
+          <td>B.Tech</td>
+          <td>85</td>
+        </tr>
+
+        <tr>
+          <td>Rahul</td>
+          <td>BCA</td>
+          <td>78</td>
+        </tr>
+
+        <tr>
+          <td>Aman</td>
+          <td>MCA</td>
+          <td>90</td>
+        </tr>
+
+      </table>
+    </section>
+
+    <!-- Form Section -->
+    <section>
+      <h2>Contact Form</h2>
+
+      <form>
+
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name">
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email">
+
+        <label>Course</label>
+
+        <select>
+          <option>B.Tech</option>
+          <option>BCA</option>
+          <option>MCA</option>
+        </select>
+
+        <label>Message</label>
+
+        <textarea rows="5" placeholder="Enter your message"></textarea>
+
+        <button class="btn">
+          Submit
+        </button>
+
+      </form>
+    </section>
+
+    <!-- Audio & Video -->
+    <section>
+      <h2>Audio and Video</h2>
+
+      <audio controls>
+        <source src="" type="audio/mp3">
+      </audio>
+
+      <br><br>
+
+      <video width="400" controls>
+        <source src="" type="video/mp4">
+      </video>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Basic HTML All Concepts Project</p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+
+    function showMessage(){
+      alert("Welcome to HTML Practice Project!");
+    }
+
+  </script>
+
+</body>
+</html>
